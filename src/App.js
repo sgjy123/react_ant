@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 // 引入antd
-import { Button } from 'antd';
-import 'antd/dist/antd.css';
+import { Button, Icon } from 'antd';
+import './App.css';
 
 class App extends Component {
     render() {
@@ -10,6 +10,7 @@ class App extends Component {
                 App.....
                 App.....
                 App.....
+                <Icon type="smile" theme="twoTone" />
                 <Button type="primary">Primary Button</Button>
             </div>
         );
