@@ -29,6 +29,16 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `注意`
+如果执行完安装依赖之后，请注意启动时报错，如果是配置文件的报错，请注意less-loader这个包的版本是否太高。
+测试时作者用的是7.1.0，这个包需要在官方对于addLessLoader的配置中添加
+####
+lessOptions: {
+ javascriptEnabled: true,
+ modifyVars: {'@primary-color': '#1DA57A'},
+} 
+####
+
 ### `yarn eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
