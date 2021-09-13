@@ -1,0 +1,34 @@
+@import '../../assets/style/mixin';
+/* @describe: 登录样式
+ * @author: 上官靖宇
+ * @date: 2021/9/9 16:48
+ */
+@imageUrl: './image';
+.login {
+  width: percentage(1);
+  height: percentage(1);
+  position: relative;
+  background: url("@{imageUrl}/login-bg.jpg") no-repeat center;
+  background-size: cover;
+  &-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: percentage(1);
+    height: 80px;
+    text-align: center;
+    background-color: rgba(0,0,0,.6);
+    &_title {
+      color: @colorWhite !important;
+      margin-bottom: 0 !important;
+      line-height: 80px !important;
+    }
+  }
+  &-content {
+    position: absolute;
+    width: 450px;
+    height: 300px;
+    background-color: @colorWhite;
+    .bd-radius(10px);
+  }
+}

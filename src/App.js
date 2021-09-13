@@ -1,18 +1,21 @@
 import React, {Component} from 'react';
-// 引入antd
-import { Button, Icon } from 'antd';
-import './App.css';
+import './App.less';
+
+// 导入路由
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+// 导入页面
+import Login from './pages/login/login'
+import Admin from './pages/admin/admin'
 
 class App extends Component {
     render() {
         return (
-            <div>
-                App.....
-                App.....
-                App.....
-                <Icon type="smile" theme="twoTone" />
-                <Button type="primary">Primary Button</Button>
-            </div>
+            <BrowserRouter>
+                <Switch>
+                    <Route path="/login" component={Login}/>
+                    <Route path="/" component={Admin}/>
+                </Switch>
+            </BrowserRouter>
         );
     }
 }

@@ -1,0 +1,31 @@
+@import "variable";
+/* @describe: 混入
+ * @author: 上官靖宇
+ * @date: 2021/9/10 10:05
+ */
+// 清楚浮动
+.clearfix() {
+  display: block;
+  zoom: 1;
+
+  &:after {
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+// 圆角
+.bd-radius(@radius: 4px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+// 垂直居中-table-cell,请在父元素上加display: table
+.center-v-table() {
+  display: table-cell;
+  vertical-align: middle;
+}
+// 垂直居中-position,如果你想相对于父元素居中，请在父元素上添加position: relative
