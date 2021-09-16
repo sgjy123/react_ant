@@ -29,3 +29,19 @@
   vertical-align: middle;
 }
 // 垂直居中-position,如果你想相对于父元素居中，请在父元素上添加position: relative
+.center-v-position(@width, @height) {
+  position: absolute;
+  width: @width;
+  height: @height;
+  top: 50%;
+  left: 50%;
+  margin-left: -(@width / 2);
+  margin-top: -(@height / 2);
+}
+// 垂直居中-transform,如果你想相对于父元素居中，请在父元素上添加position: relative
+.center-v-transform() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -26,9 +26,11 @@
   }
   &-content {
     position: absolute;
-    width: 450px;
-    height: 300px;
+    width: 550px;
+    height: 450px;
     background-color: @colorWhite;
     .bd-radius(10px);
+    //.center-v-position(550px, 450px); // 这种兼容性强
+    .center-v-transform();
   }
 }
