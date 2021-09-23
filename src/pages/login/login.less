@@ -29,8 +29,26 @@
     width: 550px;
     height: 450px;
     background-color: @colorWhite;
+    padding: 15px 35px;
     .bd-radius(10px);
     //.center-v-position(550px, 450px); // 这种兼容性强
     .center-v-transform();
+    &_title {
+      margin-top: 25px;
+      padding: 10px 0;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    &_form {
+      width: 60%;
+      margin: 35px auto 0;
+    }
+    .login-form-forgot {
+      float: right;
+    }
+    .login-form-remember {
+      float: left !important;
+    }
   }
 }
